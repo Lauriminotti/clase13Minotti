@@ -10,10 +10,10 @@ function ingreso() {
     let ubicacion = prompt("¿Sos de San Justo? SI / NO");
 
     if (ubicacion !== "SI") {
-        $("#productoOferta").hide();
+        $("#productoOferta").fadeOut();
         return;
     }
-    $("#loSentimos").hide();
+    $("#loSentimos").fadeOut();
     let edad = parseInt(prompt("Ingresa tu edad"));
     if (edad < 18) {
         alert("No podrás comprar bebidas alcoholicas");
